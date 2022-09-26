@@ -1,3 +1,4 @@
+import { it } from "mocha";
 import login from "../../PageClasses/loginPage.js"
 
 describe('Open test login page', () => {
@@ -12,7 +13,13 @@ describe('Open test login page', () => {
     login.SubmitButton.click();
  
     cy.contains("Logged In Successfully").should("be.visible");
-    
-  })
+
+  });
+
+  it('Navigate to Home Page', () => {
+    login.HomePageLink.click();
+    cy.contains("Hello").should("be.visible");
+
+  });
 
 });

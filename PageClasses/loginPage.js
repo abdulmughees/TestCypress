@@ -4,6 +4,7 @@ class Login{
         this.username = "#username";
         this.password = "#password";
         this.submitbtn = "#submit";
+        this.homepage = '#menu-item-43 > a';
 
     }
 
@@ -20,6 +21,11 @@ class Login{
     get SubmitButton(){
         return cy.get(this.submitbtn);
 
+    }
+
+    get HomePageLink(){
+        return cy.get(this.homepage);
+        
     }
 
 }
