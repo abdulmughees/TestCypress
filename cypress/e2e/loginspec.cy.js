@@ -23,6 +23,7 @@ describe('Open test login page', () => {
 
 });
 
+
 describe('Open Home page', () => {
 it('Navigate to Home Page', () => {
   login.HomePageLink.click();
