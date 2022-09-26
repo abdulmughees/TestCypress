@@ -1,4 +1,3 @@
-import { it } from "mocha";
 import login from "../../PageClasses/loginPage.js"
 
 describe('Open test login page', () => {
@@ -16,10 +15,13 @@ describe('Open test login page', () => {
 
   });
 
-  it('Navigate to Home Page', () => {
-    login.HomePageLink.click();
-    cy.contains("Hello").should("be.visible");
+});
 
-  });
+describe('Open test login page', () => {
+it('Navigate to Home Page', () => {
+  login.HomePageLink.click();
+  cy.contains("Hello").should("be.visible");
+
+});
 
 });
